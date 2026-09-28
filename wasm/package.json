@@ -8,8 +8,8 @@
     "pkg/"
   ],
   "scripts": {
-    "build": "wasm-pack build --target web --release",
-    "build:dev": "wasm-pack build --target web --dev",
+    "build": "node init && wasm-pack build --target web --release",
+    "build:dev": "node init && wasm-pack build --target web --dev",
     "serve": "python3 -m http.server 8000",
     "test": "wasm-pack test --headless --firefox"
   },
